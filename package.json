@@ -58,8 +58,8 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "npm test && git-crypt lock",
-            "pre-push": "npm run build"
+            "pre-commit": "npm test",
+            "pre-push": "npm run build && git-crypt lock"
         }
     }
 }
